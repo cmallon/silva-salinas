@@ -1,37 +1,40 @@
 const _ = require("lodash");
-const theme = require('./theme.json');
+const theme = require("./theme.json");
 const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
 
 module.exports = {
-    mode: 'jit',
-    purge: {
-        content: [
-            './*/*.php',
-            './**/*.php',
-            './resources/css/*.css',
-            './resources/js/*.js',
-            './safelist.txt'
-        ],
+  mode: "jit",
+  purge: {
+    content: [
+      "./*/*.php",
+      "./**/*.php",
+      "./resources/css/*.css",
+      "./resources/js/*.js",
+      "./safelist.txt",
+    ],
+  },
+  theme: {
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "0rem",
+      },
     },
-    theme: {
-        container: {
-            padding: {
-                DEFAULT: '1rem',
-                sm: '2rem',
-                lg: '0rem'
-            },
-        },
-        extend: {
-            colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme))
-        },
-        screens: {
-            'sm': '640px',
-            'md': '768px',
-            'lg': '1024px',
-            'xl': tailpress.theme('settings.layout.wideSize', theme)
-        }
+    fontFamily: {
+      sans: ["Poppins", "Arial", "sans-serif"],
     },
-    plugins: [
-        tailpress.tailwind
-    ]
+    extend: {
+      colors: tailpress.colorMapper(
+        tailpress.theme("settings.color.palette", theme)
+      ),
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: tailpress.theme("settings.layout.wideSize", theme),
+    },
+  },
+  plugins: [tailpress.tailwind, require("tailwindcss-container-bleed")],
 };

@@ -9,6 +9,7 @@ function silva_salinas_setup() {
 	register_nav_menus(
 		array(
 			'primary' => __( 'Primary Menu', 'tailpress' ),
+			'footer' => __( 'Footer Menu', 'tailpress' ),
 		)
 	);
 

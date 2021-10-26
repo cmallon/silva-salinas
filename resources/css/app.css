@@ -3,3 +3,394 @@
 @import "tailwindcss/utilities";
 
 @import "custom.css";
+
+@layer utilities {
+    .full-width{
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+}
+
+html {
+    @apply subpixel-antialiased text-primary;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #383638
+}
+
+body a:not(.sans) {
+    color: inherit;
+    word-break: break-word;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: 100% 0;
+    border-bottom: 3px solid #d4de24;
+    background-position: bottom;
+    background-image: linear-gradient(0deg,rgba(229,229,118,.6) 0,rgba(229,229,118,.6));
+    transition-property: border-color,border-width,background-size;
+    transition-duration: .15s;
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+}
+
+body a:not(.sans):active, body a:not(.sans):focus, body a:not(.sans):hover {
+    background-size: 100% 50%;
+    outline: 0;
+} 
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+.h1,
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.h2,
+h2 {
+    font-size: 1.38889rem;
+    line-height: 1.25;
+}
+.h3,
+h3 {
+    font-size: 1.16667rem;
+    line-height: 1.3;
+    color: #686668
+}
+.h4,
+h4 {
+    font-size: 1rem;
+    line-height: 1.35;
+}
+.h5,
+h5 {
+    font-size: 0.88889rem;
+    line-height: 1.4;
+}
+.h6,
+h6 {
+    font-size: 0.83333rem;
+    line-height: 1.6;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .h1,
+    h1 {
+        font-size: 3rem;
+    }
+    .h2,
+    h2 {
+        font-size: 2rem;
+    }
+    .h3,
+    h3 {
+        font-size: 1.16667rem;
+    }
+    .h4,
+    h4 {
+        font-size: 1rem;
+    }
+    .h5,
+    h5 {
+        font-size: 1.16667rem;
+    }
+    .h6,
+    h6 {
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .h1,
+    h1 {
+        font-size: 4rem;
+        line-height: 1.1;
+    }
+    .h2,
+    h2 {
+        font-size: 3rem;
+        line-height: 1.15;
+    }
+    .h3,
+    h3 {
+        font-size: 1.38889rem;
+        line-height: 1.2;
+    }
+    .h4,
+    h4 {
+        font-size: 1.16667rem;
+        line-height: 1.25;
+    }
+    .h5,
+    h5 {
+        font-size: 1.38889rem;
+        line-height: 1.3;
+    }
+    .h6,
+    h6 {
+        font-size: 1.16667rem;
+        line-height: 1.5;
+    }
+}
+
+.footer {
+    @apply container mx-auto text-white pt-12 pb-8 flex flex-col space-y-8 px-8 lg:px-4;
+}
+
+.footer-text{
+}
+
+.footer-text header{
+    @apply pb-4
+}
+.footer-text h3{
+    @apply text-white font-bold;
+}
+
+.footer-text p{
+    @apply text-3xl mb-2;
+}
+
+.footer-contact {
+    @apply w-full md:w-1/2 flex flex-col space-y-4
+}
+
+.footer-contact p{
+    @apply text-sm leading-7 md:leading-tight;
+}
+
+
+.footer-links{
+    @apply w-full md:w-1/2 flex flex-wrap;
+}
+
+.footer-links .links {
+    @apply w-1/3 text-sm py-4
+}
+
+.split-text-bg{
+    @apply text-white bg-primary bx-container mx-0 pb-8;
+
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.split-text {
+    @apply pt-16 pb-8 pl-4 pr-4;
+
+
+}
+
+.split-text-section {
+    @apply flex flex-col space-y-4;
+}
+
+.split-text-top { 
+    @apply flex flex-row justify-between items-center hover:text-secondary hover:cursor-pointer;
+}
+
+.split-text-icon {
+    @apply w-8 no-underline flex justify-center ml-8;
+}
+
+.split-text-title {
+    font-size: 36px;
+}
+
+.service-list ul, .service-list li, .page-nav li {
+    @apply list-none  !important;
+}
+
+.service-list ul {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.service-list li{
+    margin-bottom: 0.75rem
+    
+}
+
+.header p {
+    @apply text-xl font-semibold;
+    color: #686668
+}
+
+.homepage-image {
+    @apply bg-red-100 full-width my-12;
+
+    background-color: #efefef;
+}
+
+.homepage-image img {
+    opacity: 0.85;
+}
+
+.homepage-header h1 {
+    @apply text-5xl font-thin leading-tight mb-4;
+
+    max-width: 28ch;
+}
+
+.homepage-header h1 strong {
+    @apply font-extrabold;
+}
+
+
+.homepage-header {
+    @apply py-8;
+}
+
+.hero h1 {
+    @apply md:text-8xl lg:text-[8.33rem] text-center;
+
+}
+
+.results {
+    @apply bx-container bg-primary pt-16
+}
+
+.results h3, .results p{
+    @apply text-white
+}
+
+.result-post {
+    @apply flex flex-col space-y-8;
+}
+
+.result-title {
+}
+
+.result-content {
+    @apply flex flex-col md:flex-row md:space-x-12 space-x-0 md:space-y-0 space-y-4
+}
+
+.team {
+    @apply bx-container bg-primary py-16 relative
+}
+
+.team h2 {
+    @apply text-white text-center
+}
+
+.team .job h4{
+    @apply italic font-light;
+    color: #ccc;
+}
+
+
+.team .fl-photo-img-jpg {
+    height: min-content; 
+    overflow: hidden;
+  }
+  
+  .headshot img {
+    transition: transform .5s ease;
+  }
+  
+  .headshot:hover img {
+    transform: scale(1.1);
+  }
+
+.team h1,.team h2, .team h3, .team p{
+    @apply text-white
+}
+.services {
+    @apply bx-container bg-primary pt-16 relative
+}
+
+.services h1,.services h2, .services h3, .services p{
+    @apply text-white
+}
+
+.services h2 {
+    @apply text-5xl font-semibold leading-tight;
+}
+
+.services-link {
+    @apply sticky top-32
+}
+.services-link p {
+    @apply leading-none
+}
+
+.services li{
+    @apply text-white pb-4 text-lg;
+}
+
+.entry-content .services ol li {
+    @apply list-none;
+}
+
+.services ol li {
+    counter-increment: listCounter;
+    padding-left: 3em;
+    position: relative;
+}
+
+.services ol li:before{
+    content: counter(listCounter,decimal-leading-zero);
+    color: #aaa;
+    display: inline-block;
+    text-decoration: underline;
+    position: absolute;
+    left: 0;
+}
+
+.page-nav a:not(.active) {
+    @apply border-0 !important;
+}
+
+.member-description h1{
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.member-description h3{
+    color: #686668;
+    font-style: normal;
+    display: block;
+    font-weight: 400;
+    margin-top: 1em;
+}
+
+.member-information {
+    @apply bx-container pt-16 relative;
+
+    background-color: #efefef
+}
+
+.logo {
+    @apply w-64
+}
+.logo .glyph {
+    @apply text-secondary fill-current
+}
+
+.page-header {
+    @apply bg-white sticky top-0 pt-12 pb-8 z-10
+}
