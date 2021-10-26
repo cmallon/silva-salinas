@@ -32,10 +32,6 @@
   }
 }
 
-.fixed {
-  position: fixed
-}
-
 .relative {
   position: relative
 }
@@ -84,10 +80,6 @@
   margin-bottom: 2rem
 }
 
-.mt-4 {
-  margin-top: 1rem
-}
-
 .mt-8 {
   margin-top: 2rem
 }
@@ -98,10 +90,6 @@
 
 .mt-6 {
   margin-top: 1.5rem
-}
-
-.block {
-  display: block
 }
 
 .inline-block {
@@ -150,10 +138,6 @@
 
 .w-8 {
   width: 2rem
-}
-
-.w-32 {
-  width: 8rem
 }
 
 .max-w-sm {
@@ -267,11 +251,6 @@
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity))
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity))
-}
-
 .bg-red-100 {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 226, 226, var(--tw-bg-opacity))
@@ -279,10 +258,6 @@
 
 .fill-current {
   fill: currentColor
-}
-
-.p-4 {
-  padding: 1rem
 }
 
 .px-4 {
@@ -300,11 +275,6 @@
   padding-right: 0.75rem
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem
@@ -318,11 +288,6 @@
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem
 }
 
 .pt-12 {
@@ -345,10 +310,6 @@
   padding-left: 1rem
 }
 
-.pt-8 {
-  padding-top: 2rem
-}
-
 .text-center {
   text-align: center
 }
@@ -363,19 +324,14 @@
   line-height: 2rem
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem
 }
 
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem
 }
 
 .text-xl {
@@ -391,20 +347,12 @@
   font-weight: 700
 }
 
-.font-extrabold {
-  font-weight: 800
-}
-
 .font-thin {
   font-weight: 100
 }
 
 .font-semibold {
   font-weight: 600
-}
-
-.uppercase {
-  text-transform: uppercase
 }
 
 .italic {
@@ -433,9 +381,9 @@
   color: rgba(255, 255, 255, var(--tw-text-opacity))
 }
 
-.text-gray-600 {
+.text-secondary {
   --tw-text-opacity: 1;
-  color: rgba(75, 85, 99, var(--tw-text-opacity))
+  color: rgba(212, 222, 42, var(--tw-text-opacity))
 }
 
 .text-blue-500 {
@@ -443,9 +391,9 @@
   color: rgba(59, 130, 246, var(--tw-text-opacity))
 }
 
-.text-secondary {
+.text-primary {
   --tw-text-opacity: 1;
-  color: rgba(212, 222, 42, var(--tw-text-opacity))
+  color: rgba(56, 54, 55, var(--tw-text-opacity))
 }
 
 .no-underline {
@@ -628,48 +576,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .lg\:-mx-4 {
-    margin-left: -1rem;
-    margin-right: -1rem
-  }
-
-  .lg\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem
-  }
-
-  .lg\:mt-0 {
-    margin-top: 0px
-  }
-
-  .lg\:block {
-    display: block
-  }
-
-  .lg\:flex {
-    display: flex
-  }
-
-  .lg\:hidden {
-    display: none
-  }
-
-  .lg\:items-center {
-    align-items: center
-  }
-
-  .lg\:justify-between {
-    justify-content: space-between
-  }
-
-  .lg\:bg-transparent {
-    background-color: transparent
-  }
-
-  .lg\:p-0 {
-    padding: 0px
-  }
-
   .lg\:text-\[8\.33rem\] {
     font-size: 8.33rem
   }

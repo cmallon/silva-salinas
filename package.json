@@ -1,14 +1,14 @@
 {
 	"name": "silva-salinas",
-	"version": "0.1.0",
-	"description": "Boilerplate WordPress theme with Tailwind CSS.",
-	"author": "Jeffrey van Rossum",
+	"version": "0.1.1",
+	"description": "Theme for Silva/Salinas.",
+	"author": "Christopher Mallon",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/username/silva-salinas"
+		"url": "https://github.com/cmallon/silva-salinas"
 	},
-	"theme_uri": "https://github.com/username/silva-salinas",
-	"author_uri": "https://vanrossum.dev",
+	"theme_uri": "https://github.com/cmallon/silva-salinas",
+	"author_uri": "https://taylorlabs.co",
 	"text_domain": "silva-salinas",
 	"license": "MIT",
 	"scripts": {

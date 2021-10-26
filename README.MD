@@ -1,9 +1,3 @@
-<p><img src="http://tailpress.io/images/tailpress100.svg" width="260" alt="TailPress"></p>
-
-[![GitHub release](https://img.shields.io/github/release/jeffreyvr/tailpress?include_prereleases=&sort=semver)](https://github.com/jeffreyvr/tailpress/releases/)
-[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
-[![issues - tailpress](https://img.shields.io/github/issues/jeffreyvr/tailpress)](https://github.com/jeffreyvr/tailpress/issues)
-
 # Introduction
 
 TailPress is a minimal boilerplate theme for WordPress using [Tailwind CSS](https://tailwindcss.com/).
@@ -20,7 +14,7 @@ composer global require jeffreyvanrossum/tailpress-installer
 tailpress new example-theme
 ```
 
-*If you haven't already, make sure to place the `~/.composer/vendor/bin` directory in your `PATH` so the tailpress executable is found when you run the tailpress command in your terminal.*
+_If you haven't already, make sure to place the `~/.composer/vendor/bin` directory in your `PATH` so the tailpress executable is found when you run the tailpress command in your terminal._
 
 You can optionally set the theme name.
 
@@ -40,10 +34,10 @@ You will be asked if you would like to have WordPress installed as well. Keep in
 
 ### Regular method
 
-* Clone repo `git clone https://github.com/jeffreyvr/tailpress.git && cd tailpress`
-* Run `rm -rf .git` to remove git (or `rmdir .git` for Windows)
-* Run `npm install`
-* Run `npm run watch` to start developing
+- Clone repo `git clone https://github.com/jeffreyvr/tailpress.git && cd tailpress`
+- Run `rm -rf .git` to remove git (or `rmdir .git` for Windows)
+- Run `npm install`
+- Run `npm run watch` to start developing
 
 ### General
 
@@ -60,7 +54,7 @@ Before you use your theme in production, make sure you run `npm run production`.
 There are several NPM scripts available. You'll find the full list in the `package.json` file onder "scripts". A script is executed through the terminal by running `npm run script-name`.
 
 | Script     | Description                                                                    |
-|------------|--------------------------------------------------------------------------------|
+| ---------- | ------------------------------------------------------------------------------ |
 | production | Creates a production (minified) build of app.js, app.css and editor-style.css. |
 | dev        | Creates a development build of app.js, app.css and editor-style.css.           |
 | watch      | Runs several watch scripts concurrently.                                       |
@@ -86,15 +80,15 @@ By default, PurgeCSS is enabled. You can modify or disable it by changing the se
 
 ## Links
 
-* [TailPress website](https://tailpress.io)
-* [Screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG)
-* [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-* [Esbuild Documentation](https://esbuild.github.io)
+- [TailPress website](https://tailpress.io)
+- [Screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Esbuild Documentation](https://esbuild.github.io)
 
 ## Contributors
 
-* [Jeffrey van Rossum](https://github.com/jeffreyvr)
-* [All contributors](https://github.com/jeffreyvr/tailpress/graphs/contributors)
+- [Jeffrey van Rossum](https://github.com/jeffreyvr)
+- [All contributors](https://github.com/jeffreyvr/tailpress/graphs/contributors)
 
 ## License
 

@@ -202,11 +202,10 @@ p {
 .split-text {
     @apply pt-16 pb-8 pl-4 pr-4;
 
-
 }
 
-.split-text-section {
-    @apply flex flex-col space-y-4;
+.split-text .text {
+    @apply flex flex-col space-y-8;
 }
 
 .split-text-top { 
@@ -293,13 +292,22 @@ p {
     @apply bx-container bg-primary py-16 relative
 }
 
-.team h2 {
-    @apply text-white text-center
+.team.white {
+    @apply bx-container bg-white py-16 relative
+}
+
+.team.white h2 {
+    @apply text-primary text-center
 }
 
 .team .job h4{
     @apply italic font-light;
     color: #ccc;
+}
+
+.team.white .job h4{
+    @apply italic font-light;
+    color: #686668;
 }
 
 
